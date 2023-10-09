@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Header from './Header'
+import Footer from './Footer'
 
 const inter = Inter({
     subsets: ['latin'],
@@ -13,7 +14,7 @@ export default function AppLayout({ children }) {
             <main className="flex-grow bg-[#f7f7f7]">
                 {children}
             </main>
-            <footer>footer</footer>
+            <Footer></Footer>
         </div>
     )
 }
